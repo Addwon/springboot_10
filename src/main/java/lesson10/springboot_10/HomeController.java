@@ -53,5 +53,6 @@ public class HomeController {
     public String delCourse(@PathVariable("id") long id){
         courseRepository.delete(id);
         return "redirect:/";
+        //return "list";
     }
 }
